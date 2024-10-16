@@ -28,10 +28,14 @@
             padding: 10px;
             text-align: center;
         }
-        img {
+        .image-container {
+            display: flex;
+            justify-content: space-around; /* 分散圖片 */
+            align-items: center;
+            margin: 20px 0;
+        }
+        .image-container img {
             max-width: 300px;
-            display: block;
-            margin: 0 auto;
         }
     </style>
 </head>
@@ -49,7 +53,6 @@
         <li>Weight: 2.2kg</li>
         <li>Operating System: Windows 11</li>
     </ul>
-    <img src="https://i.imgur.com/iJhzzjK.jpeg">
 
     <h2>Acer Predator Helios Neo PHN16-71-79C7</h2>
     <ul>
@@ -61,7 +64,6 @@
         <li>Weight: 2.6kg</li>
         <li>Operating System: Windows 11</li>
     </ul>
-    <img src=""https://img.pchome.com.tw/cs/items/DHABBAA900G8W30/000001_1697693517.jpg"">
 
     <h2>Performance Comparison</h2>
     <table>
@@ -81,7 +83,7 @@
             <td>NVIDIA GeForce RTX 4060</td>
         </tr>
         <tr>
-            <td>Display</td>https://dlcdnwebimgs.asus.com/gain/294a5c26-27bd-4743-a9db-4829a9414d89//w184
+            <td>Display</td>
             <td>14" QHD, 165Hz</td>
             <td>16" WUXGA, 165Hz</td>
         </tr>
@@ -96,6 +98,13 @@
             <td>16GB DDR5 (up to 32GB)</td>
         </tr>
     </table>
-        <img src"https://i.imgur.com/KXf9Hyu.jpeg">
+
+    <!-- 圖片容器，使用 Flexbox 分散圖片 -->
+    <div class="image-container">
+        <img src="https://i.imgur.com/iJhzzjK.jpeg" alt="ASUS TUF Gaming A14">
+        <img src="https://img.pchome.com.tw/cs/items/DHABBAA900G8W30/000001_1697693517.jpg" alt="Acer Predator Helios Neo">
+        <img src="https://i.imgur.com/KXf9Hyu.jpeg" alt="Performance Comparison">
+    </div>
+
 </body>
 </html>
